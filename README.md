@@ -52,3 +52,20 @@ Install NGINX on the server by following these instructions:
 </body>
 </html> 
 ```
+## Step 3
+* Write an nginx server block to serve your HTML document from step 2.
+```
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/147.182.243.201/html; # Change the ip address to your droplets ip address
+        index index.html;
+
+        server_name 147.182.243.201; # Change the ip address to your droplets ip address
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+```
