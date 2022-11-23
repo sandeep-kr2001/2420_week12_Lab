@@ -88,3 +88,9 @@ server {
 
 * you can create a soft link to your new server block in sites-enabled ``` sudo ln -s /etc/nginx/sites-available/your_ip /etc/nginx/sites-enabled/` ```
 ![soft_link](https://user-images.githubusercontent.com/97915467/203542273-e01ddaf7-1dcb-48ab-8e71-963b7fd9e581.JPG)
+
+
+## Step 5
+* Start or restart your service.
+* Restart nginx using ``` sudo systemctl restart nginx ```
+![restart_nginx](https://user-images.githubusercontent.com/97915467/203541421-ec033849-512b-484d-9171-af855d2ecd73.JPG)
