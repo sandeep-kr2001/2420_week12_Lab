@@ -69,3 +69,22 @@ server {
         }
 }
 ```
+
+## Step 4
+* Upload your files to your server.
+* To upload your files using sftp. 
+``` sftp -i ~/.ssh/id_rsa web-one@147.182.243.201 ```
+* After it connects to the servers ip address you can use 
+``` put -r index.html ```
+``` put -r 147.182.243.201 ```
+* This will put both the files in the droplet.
+![put_files](https://user-images.githubusercontent.com/97915467/203539910-d13577c9-dcbe-452d-9660-977349c20ef9.JPG)
+
+* Move the files to the appropriate directories. 
+* Index.html file will be moved to /var/www/147.182.243.201/html using  ``` sudo mv index.html /var/www/147.182.243.201/html/ ```
+* 147.182.243.201 server blovk will be moved to /etc/nginx/sites-available using ``` sudo mv 147.182.243.201 /etc/nginx/sites-available/ ```
+* ![mv_index](https://user-images.githubusercontent.com/97915467/203540179-04d9a549-2714-4aa5-8768-e7c12d2fca92.JPG)
+![mv_server](https://user-images.githubusercontent.com/97915467/203540221-e1162285-7670-427e-9dbe-5cdcadb1c304.JPG)
+
+* you can create a soft link to your new server block in sites-enabled ``` sudo ln -s /etc/nginx/sites-available/your_ip /etc/nginx/sites-enabled/` ```
+![soft_link](https://user-images.githubusercontent.com/97915467/203542273-e01ddaf7-1dcb-48ab-8e71-963b7fd9e581.JPG)
