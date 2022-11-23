@@ -94,3 +94,7 @@ server {
 * Start or restart your service.
 * Restart nginx using ``` sudo systemctl restart nginx ```
 ![restart_nginx](https://user-images.githubusercontent.com/97915467/203541421-ec033849-512b-484d-9171-af855d2ecd73.JPG)
+
+## Step 6
+* Check to see if your document is being served by visiting your servers ip address
+![website_html](https://user-images.githubusercontent.com/97915467/203541517-27c86e51-53fa-4dd9-8360-6222c05a513a.JPG)
