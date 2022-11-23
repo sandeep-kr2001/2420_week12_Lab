@@ -98,3 +98,16 @@ server {
 ## Step 6
 * Check to see if your document is being served by visiting your servers ip address
 ![website_html](https://user-images.githubusercontent.com/97915467/203541517-27c86e51-53fa-4dd9-8360-6222c05a513a.JPG)
+
+## Step 7 
+* Setup a firewall using UFW. Allow incoming HTTP and SSH connections. 
+
+```  sudo ufw enable ```
+
+```  sudo ufw status ```
+
+``` sudo ufw allow OpenSSH ```
+
+``` sudo ufw allow 'Nginx HTTP' ```
+
+![ufw](https://user-images.githubusercontent.com/97915467/203541706-fabd3568-597c-4a49-b2f2-67b98e5a2b2f.JPG)
