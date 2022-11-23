@@ -111,3 +111,11 @@ server {
 ``` sudo ufw allow 'Nginx HTTP' ```
 
 ![ufw](https://user-images.githubusercontent.com/97915467/203541706-fabd3568-597c-4a49-b2f2-67b98e5a2b2f.JPG)
+
+## Step 8
+* After setting up your firewall ensure that you can still connect to your server via ssh and HTTP. You should still be able to connect to your server via ssh and visit the ip address in the browser.
+
+![website_html](https://user-images.githubusercontent.com/97915467/203542344-51d4b5f8-bc38-4c10-a057-d5adf78aed5f.JPG)
+
+
+![afterfirewall](https://user-images.githubusercontent.com/97915467/203606533-440509ed-89a5-4669-96ca-4bee0d07549f.JPG)
