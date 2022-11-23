@@ -23,3 +23,32 @@ Install NGINX on the server by following these instructions:
 * After installing nginx check the status using ``` sudo systemctl status nginx ```
 
 ![statusnginx](https://user-images.githubusercontent.com/97915467/203606313-a7870aef-047b-462f-8c60-e812d7195f9d.JPG)
+
+## Step 2
+* Create a simple, but complete HTML document to serve. Your file should be named **index.html**
+``` <!DOCTYPE html>
+<head>
+        <title> ACIT 2420 Week 12</title>
+        <style>
+                body {
+                        background-color: #2D2D2D;
+                }
+
+                h1 {
+                        color: #C26356;
+                        font-size: 30px;
+                        font-family: Menlo, Monaco, fixed-width;
+                }
+
+                p {
+                        color: White;
+                        font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+                }
+        </style>
+</head>
+<body>
+        <h1>Hello Everyone</h1>
+        <p>This is a webpage created for Week 12 lab for ACIT 2420 by <b>Sandeep Kaur & Jacob Lloyd</b> </p>
+</body>
+</html> 
+```
